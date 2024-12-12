@@ -1,0 +1,4 @@
+{
+  "logInLink": "//a[@href='/Account/Login.cshtml']",
+  "welcomeText": "//h1[text()='Welcome to Safe Railway']"
+}

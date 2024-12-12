@@ -1,0 +1,10 @@
+{
+  "validUser": {
+    "username": "demo@sharklasers.com",
+    "password": "demo1234"
+  },
+  "invalidUser": {
+    "username": "Tester 002",
+    "password": ""
+  }
+}
