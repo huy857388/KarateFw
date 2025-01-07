@@ -1,0 +1,12 @@
+{
+  "returnToShopButton": "//a[@class='btn black']",
+  "messageText": "//div[@class='woocommerce']//h1",
+  "productTitleText": "//*[@class='product-title' and text()='%s']",
+  "productPriceText": "//div[@class='table-responsive']//a[text()='%s']/ancestor::td/following-sibling::td",
+  "productQuantityText": "//div[@class='table-responsive']//a[text()='%s']/ancestor::td/following-sibling::td//input[@title='Qty']",
+  "productSubTotalText": "//div[@class='table-responsive']//a[text()='%s']/ancestor::td/following-sibling::td[@class='product-subtotal']",
+  "processToCheckoutButton": "//a[contains(@class,'checkout')]",
+  "shoppingCartLink": "//a[@href='https://demo.testarchitect.com/cart/' and @data-step='1']",
+  "checkOutLink": "//a[@href='https://demo.testarchitect.com/checkout/' and @data-step='2']",
+  "orderStatusLink": "//a[@href='#' and @data-step='3']"
+}

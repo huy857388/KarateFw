@@ -1,0 +1,6 @@
+{
+  "loginInput": "//input[@name='username']",
+  "passwordInput": "//input[@name='password']",
+  "dynamicBtn": "//button[text()='%s']"
+
+}

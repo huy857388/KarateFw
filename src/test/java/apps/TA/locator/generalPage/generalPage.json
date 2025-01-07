@@ -1,0 +1,6 @@
+{
+  "quantityInCartText": "//div[@class='header-wrapper']//a[contains(@href,'cart')]//span[contains(@class,'quantity count')]",
+  "cartIconButton": "//div[@class='header-wrapper']//a[contains(@href,'/cart/')]//span[@class='et-svg']",
+  "addProductSuccessful": "//div[@class='et-notify pos-fixed top right' and text()='Product added.']"
+
+}

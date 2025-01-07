@@ -16,6 +16,8 @@ Feature:
     * def saveFile = method(featurePath, '@saveFile')
     * def findText = method(featurePath, '@findText')
     * def findNotExistText = method(featurePath, '@findNotExistText')
+    * def printCurrentDate = method(featurePath, '@printCurrentDate')
+    * def checkCurrentDate = method(featurePath, '@checkCurrentDate')
 
   @inputText
   Scenario:
@@ -107,3 +109,20 @@ Feature:
     * call findText { findText: '#(text)'}
     * def result = robot.waitForWindowOptional('Notepad').locate('#65535').name
 
+  @printCurrentDate
+  Scenario:
+    * robot.click('Edit')
+    * robot.click("//MenuItem{^Time}")
+
+  @checkCurrentDate
+  Scenario:
+    * def pirntText = robot.locate('^Text Editor').value
+    * def func =
+      """
+      function(arg){
+        var getText = new Date(pirntText)
+        var currentDate = new Date()
+        return getText.toLocaleDateString() == currentDate.toLocaleDateString()
+      }
+      """
+    * def result = func()

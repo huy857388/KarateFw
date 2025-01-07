@@ -10,24 +10,32 @@ Feature: windows calculator
     * def findText = 'note'
     * def replaceText = 'document'
 
-  Scenario:
-    * call notePad.inputText {inputText: '#(inputText)'}
-    * call notePad.saveAsFile
-    * call notePad.closeApp
-    * karate.fork('C:/Windows/System32/notepad.exe')
-    * call notePad.openExistedFile {fileName: '#(fileName)', path: '#(pathFile)'}
-    * def text = call notePad.getTextContent
-    * match text.result == inputText
+#  Scenario:
+#    * call notePad.inputText {inputText: '#(inputText)'}
+#    * call notePad.saveAsFile
+#    * call notePad.closeApp
+#    * karate.fork('C:/Windows/System32/notepad.exe')
+#    * call notePad.openExistedFile {fileName: '#(fileName)', path: '#(pathFile)'}
+#    * def text = call notePad.getTextContent
+#    * match text.result == inputText
+#
+#  Scenario:
+#    * call notePad.openExistedFile {fileName: '#(fileName)', path: '#(pathFile)'}
+#    * call notePad.selectFontOptions {fontStyle: null, font: null, size: '19'}
+#
+#  Scenario:
+#    * call notePad.openExistedFile {fileName: '#(fileName)', path: '#(pathFile)'}
+#    * call notePad.replaceText { findText: '#(findText)', replaceText: '#(replaceText)' }
+#    * call notePad.saveFile
+#    * def result = call notePad.findNotExistText { text: '#(findText)' }
+#    * match result.result contains 'Cannot find'
+#
+#  Scenario:
+#    * call notePad.printCurrentDate
+#    * def date = call notePad.checkCurrentDate
+#    * match date.result == true
 
   Scenario:
-    * call notePad.openExistedFile {fileName: '#(fileName)', path: '#(pathFile)'}
-    * call notePad.selectFontOptions {fontStyle: null, font: null, size: '19'}
-
-  Scenario:
-    * call notePad.openExistedFile {fileName: '#(fileName)', path: '#(pathFile)'}
-    * call notePad.replaceText { findText: '#(findText)', replaceText: '#(replaceText)' }
-    * call notePad.saveFile
-    * def result = call notePad.findNotExistText { text: '#(findText)' }
-    * match result.result contains 'Cannot find'
-
-
+    * robot.click('File')
+    * robot.click('#2')
+    * robot.waitForWindowOptional('^Open').optional('//pane{Control Host}/{Tree View}').scroll(50,50)

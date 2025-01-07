@@ -1,0 +1,23 @@
+{
+  "sideMenuItem": "//ul[@class='oxd-main-menu']//span[text()='%s']",
+  "dynamicBtn": "//button[text()='%s']",
+  "firstNameInput": "//input[@name='firstName']",
+  "middleNameInput": "//input[@name='middleName']",
+  "lastNameInput": "//input[@name='lastName']",
+  "employeeIdInput": "//div[@class='oxd-grid-2 orangehrm-full-width-grid']//input",
+  "pictureBtn": "//div[@class='oxd-file-div oxd-file-div--active']/button",
+  "successfulDialog": "//div[@id='oxd-toaster_1']//p[text()='Success']/following-sibling::p",
+  "topBarMenu": "//nav[@class='oxd-topbar-body-nav']//li/*[text()='%s']",
+  "dynamicInput": "//label[text()='%s']//parent::div//following-sibling::div//input",
+  "itemOption": "//div[@class='oxd-select-option']//span[text()='%s']",
+  "dynamicListBox": "//label[text()='%s']//parent::div//following-sibling::div//i",
+  "dynamicSuggestionOption": "//div[@role='listbox']//span[contains(text(),'%s')]",
+  "vacancyName": "//div[@class='oxd-table-body']//div[@role='row']/div[2]",
+  "dynamicDeleteBtn": "//div[text()='%s']//parent::div//following-sibling::div[4]//button[1]",
+  "topSubmenuItem": "//a[@role='menuitem' and text()='%s']",
+  "preBtn": "//button[contains(@class, 'prev')]",
+  "activitySelection": "//div[@class='oxd-select-wrapper']//parent::div//following-sibling::div//i",
+  "dynamicTimeDayInput": "//tr[@class='orangehrm-timesheet-table-body-row']//td[contains(@class,'--duration-input')]//input"
+
+
+}

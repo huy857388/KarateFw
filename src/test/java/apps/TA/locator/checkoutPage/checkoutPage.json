@@ -1,0 +1,21 @@
+{
+  "firstNameTextbox": "//input[@id='billing_first_name']",
+  "lastNameTextbox": "//input[@id='billing_last_name']",
+  "countryDropbox": "//select[@id='billing_country']",
+  "addressTextbox": "//input[@id='billing_address_1']",
+  "cityTextbox": "//input[@id='billing_city']",
+  "zipCodeTextbox": "//input[@id='billing_postcode']",
+  "phoneTextbox": "//input[@id='billing_phone']",
+  "emailTextbox": "//input[@id='billing_email']",
+  "createAccountChkbox": "//input[@name='createaccount']",
+  "placeOrderButton": "//button[@value='Place order']",
+  "thankYouMessageText": "//p[contains(@class,'thankyou')]",
+  "paymentMethodOption": "//div[@id='payment']//*[contains(text(),'%s')]",
+  "orderCodeText": "//li[contains(@class,'order')]/strong",
+  "orderDateText": "//li[contains(@class,'date')]/strong",
+  "orderTotalText": "//li[contains(@class,'total')]/strong",
+  "orderPaymentMethodText": "//li[contains(@class,'payment-method')]/strong",
+  "orderProductNameText": "//td[contains(@class,'product-name')]/a[text()='%s']",
+  "orderProductQuantityText": "//td[contains(@class,'product-name')]/a[text()='%s']/following-sibling::strong"
+
+}

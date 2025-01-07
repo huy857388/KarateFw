@@ -1,0 +1,7 @@
+{
+  "closePopUpButton": "//button[contains(@class,'close')]",
+  "productNameText": "//div[h2[a[text()='AirPods]]]//span[contains(@class,'Price-amount')]",
+  "productQuantityText": "//div[@class='header-wrapper']//span[contains(@class,'et_b-icon')]//span[contains(@class,'et-cart-quantity')]",
+  "addProductToCartButton": "//div[@class='ajax-content clearfix']//a[text()='%s']",
+  "addToCartIcon": "//footer[@class='footer-product']/a[@data-product_name='%s']"
+}
